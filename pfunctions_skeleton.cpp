@@ -9,11 +9,13 @@ using namespace std;
 // Add Pre- and Post-Condition comments
 
 bool isPalindrome(string s) {
+    
     // This MUST be written as a RECURSIVE FUNCTION! (or you get no lab credit)
 
     return(true); // This is a STUB - remove it once the function is completed.
 }
 
 void cleanUp(string &s) { 
+
     cout << s << endl; // This is a TRACE - remove it once the function is completed. 
 }
