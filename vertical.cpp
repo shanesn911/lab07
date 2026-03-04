@@ -7,7 +7,7 @@
 using namespace std;
 
 // Declare printV() here
-void printV(int n);
+void printV(long long n);
 
 int main() {
     // 1. Get user input
@@ -24,7 +24,7 @@ int main() {
 }
 
 // Define printV() here
-void printV(int n) {
+void printV(long long n) {
     if (n < 10) {
         cout << n << endl;
     } else {
