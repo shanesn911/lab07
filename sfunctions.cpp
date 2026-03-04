@@ -1,13 +1,3 @@
-// File: sfunctions.cpp
-#include <iostream>
-#include <fstream>
-#include <string>
-#include <cstdlib>
-using namespace std;
-
-#include "sheaders.h"
-
-// DEFINE ALL 5 FUNCTIONS PER THE sheaders.h FILE HERE
 #include <iostream>
 #include <fstream>
 #include <string>
@@ -45,13 +35,9 @@ void sort(bool desc, int a[], int number_used, int index) {
     sort(desc, a, number_used, index + 1);
 }
 
-// Pre:  fname is a valid, accessible file path
-// Post: returns the number of integers in the file, or -1 if file cannot be opened
+// Pre:  inf is an open ifstream pointing to a file of integers, fname is the filename
+// Post: returns the number of integers in the file, closes the stream when done
 int getFileSize(ifstream& inf, string fname) {
-    inf.open(fname);
-    if (!inf) {
-        return -1;
-    }
     int count = 0;
     int temp;
     while (inf >> temp) {
@@ -70,4 +56,3 @@ void getArray(ifstream& in, string fname, int arr[], int size) {
     }
     in.close();
 }
-// Add Pre- and Post-Condition comments
