@@ -9,10 +9,17 @@ using namespace std;
 
 int main() {
     // 1. Get a string from the user (see examples given)
+    string s;  
+    cout << "Enter a sentence: ";
+    getline(cin, s);
     // 2. Clean up the string using the required function
+    cleanUp(s);
     // 3. Check to see if string is a palindrome
-    // 4. Print out message accordingly (see examples given)
-
+    if (isPalindrome(s)) {
+        cout << "It is a palindrome." << endl;
+    } else {
+        cout << "It is not a palindrome." << endl;
+    }
     return 0;
 }
 

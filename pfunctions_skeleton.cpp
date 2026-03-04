@@ -11,11 +11,25 @@ using namespace std;
 bool isPalindrome(string s) {
     
     // This MUST be written as a RECURSIVE FUNCTION! (or you get no lab credit)
-
-    return(true); // This is a STUB - remove it once the function is completed.
+    if (s.length() <= 1) {
+        return true; 
+    }
+    if (s[0] != s[s.length() - 1]) {
+        return false;
+    }
+    return isPalindrome(s.substr(1, s.length() - 2)); // Recursively check the substring without first and last characters
 }
 
 void cleanUp(string &s) { 
-
+    string cleaned = "";
+    for (int i = 0; i < s.length(); i++) {
+        char c = s[i];
+        if (isalpha(c)) {
+            cleaned += tolower(c);
+        }
+    }
+    s = cleaned;
     cout << s << endl; // This is a TRACE - remove it once the function is completed. 
 }
+
+
