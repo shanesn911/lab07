@@ -28,7 +28,7 @@ int main() {
     getArray(inf, filename, arr, size);
 
     // 3. Print original array (see PDF lab description for details)
-    cout << "Original array: " << endl; 
+    cout << "Original array: "; 
     for (int i = 0; i < size; i++) {
         cout << arr[i] << " ";
     }
@@ -45,7 +45,7 @@ int main() {
     sort(desc, arr, size, 0);
 
     // 6. Print sorted array (see PDF lab description for details)
-    cout << "Sorted array: " << endl;
+    cout << "Sorted array: ";
     for (int i = 0; i < size; i++) {
         cout << arr[i] << " ";
     }

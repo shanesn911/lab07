@@ -10,7 +10,7 @@ using namespace std;
 int main() {
     // 1. Get a string from the user (see examples given)
     string s;  
-    cout << "Enter a sentence: ";
+    cout << "Enter sentence: ";
     getline(cin, s);
     // 2. Clean up the string using the required function
     cleanUp(s);
