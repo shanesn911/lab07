@@ -2,19 +2,16 @@
  * For use in CS 16
  * (c) 2024 by Z.Matni
  */
-#include <iostream> // for cout, cin, endl
-#include <string>   // for string
+#include <iostream>
+#include <string>
 using namespace std;
 #include "pheaders.h"
 
 int main() {
-    // 1. Get a string from the user (see examples given)
     string s;  
     cout << "Enter sentence: ";
     getline(cin, s);
-    // 2. Clean up the string using the required function
     cleanUp(s);
-    // 3. Check to see if string is a palindrome
     if (isPalindrome(s)) {
         cout << "It is a palindrome." << endl;
     } else {
@@ -22,4 +19,3 @@ int main() {
     }
     return 0;
 }
-
