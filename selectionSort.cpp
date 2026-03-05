@@ -23,7 +23,7 @@ int main() {
     int* arr = new int[size];
     getArray(inf, filename, arr, size);
 
-    cout << "Original array: ";
+    cout << "Original array: " << endl;
     for (int i = 0; i < size; i++)
         cout << arr[i] << " ";
     cout << endl;
@@ -35,7 +35,7 @@ int main() {
 
     sort(desc, arr, size, 0);
 
-    cout << "Sorted array: ";
+    cout << "Sorted array: " << endl;
     for (int i = 0; i < size; i++)
         cout << arr[i] << " ";
     cout << endl;
