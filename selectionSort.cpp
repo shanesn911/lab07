@@ -7,7 +7,6 @@
 #include <string>   // for string
 #include <cstdlib>  // for exit
 using namespace std;
-#include "sfunctions.cpp"
 #include "sheaders.h"
 
 int main() {

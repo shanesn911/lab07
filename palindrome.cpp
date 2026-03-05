@@ -6,7 +6,6 @@
 #include <string>   // for string
 using namespace std;
 #include "pheaders.h"
-#include "pfunctions.cpp"
 
 int main() {
     // 1. Get a string from the user (see examples given)
