@@ -6,10 +6,13 @@
 #include <string>
 using namespace std;
 #include "pheaders.h"
+#include "pfunctions.cpp"
 
 int main() {
     string s;  
-    cout << "Enter sentence: " << endl;
+    cout << "Enter sentence: ";
+    cin.ignore(); 
+
     getline(cin, s);
     cleanUp(s);
     if (isPalindrome(s)) {

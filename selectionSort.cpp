@@ -7,6 +7,7 @@
 #include <string>
 #include <cstdlib>
 using namespace std;
+#include "sfunctions.cpp"
 #include "sheaders.h"
 
 int main() {
@@ -23,7 +24,7 @@ int main() {
     int* arr = new int[size];
     getArray(inf, filename, arr, size);
 
-    cout << "Original array: " << endl;
+    cout << "Original array: ";
     for (int i = 0; i < size; i++)
         cout << arr[i] << " ";
     cout << endl;
@@ -35,7 +36,7 @@ int main() {
 
     sort(desc, arr, size, 0);
 
-    cout << "Sorted array: " << endl;
+    cout << "Sorted array: ";
     for (int i = 0; i < size; i++)
         cout << arr[i] << " ";
     cout << endl;
