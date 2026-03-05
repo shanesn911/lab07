@@ -9,7 +9,7 @@ using namespace std;
 
 int main() {
     string s;  
-    cout << "Enter sentence: " << endl;
+    cout << "Enter sentence:" << endl;
     getline(cin, s);
     cleanUp(s);
     if (isPalindrome(s)) {
