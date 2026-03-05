@@ -1,4 +1,3 @@
-
 all: palindrome selectionSort vertical
 
 palindrome: palindrome.cpp pfunctions.cpp
