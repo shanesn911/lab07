@@ -6,7 +6,6 @@
 #include <string>
 using namespace std;
 #include "pheaders.h"
-#include "pfunctions.cpp"
 
 int main() {
     string s;  

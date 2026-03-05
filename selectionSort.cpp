@@ -7,7 +7,6 @@
 #include <string>
 #include <cstdlib>
 using namespace std;
-#include "sfunctions.cpp"
 #include "sheaders.h"
 
 int main() {
